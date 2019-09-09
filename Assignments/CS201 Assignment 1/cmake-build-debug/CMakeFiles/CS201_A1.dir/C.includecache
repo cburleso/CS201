@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/PC/Desktop/CS201 A1/main.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+warmup.kyeung2.h
+C:/Users/PC/Desktop/CS201 A1/warmup.kyeung2.h
+
+C:/Users/PC/Desktop/CS201 A1/warmup.kyeung2.c
+stdio.h
+-
+string.h
+-
+stdlib.h
+-
+warmup.kyeung2.h
+C:/Users/PC/Desktop/CS201 A1/warmup.kyeung2.h
+
+C:/Users/PC/Desktop/CS201 A1/warmup.kyeung2.h
+
