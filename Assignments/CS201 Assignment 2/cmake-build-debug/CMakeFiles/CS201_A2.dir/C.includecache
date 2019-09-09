@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/PC/Desktop/CS201 Assignment 2/slist.kyeung2.c
+stdio.h
+-
+string.h
+-
+stdlib.h
+-
+slist.kyeung2.h
+C:/Users/PC/Desktop/CS201 Assignment 2/slist.kyeung2.h
+
+C:/Users/PC/Desktop/CS201 Assignment 2/slist.kyeung2.h
+
