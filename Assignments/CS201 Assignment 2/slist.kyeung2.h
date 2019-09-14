@@ -3,16 +3,16 @@
 #define CS201_A2_WARMUP_KYEUNG2_H
 
 //Struct StudentData is defined, typeDef removed to fix storage error on Linux
-struct StudentListNodeStruct;
+typedef struct StudentListNodeStruct StudentListNode ;
 //typedef struct StudentListNode;
 
 
-//int insertStudent(StudentListNode **list, int id, char *name);
-//
-//int findStudent(StudentListNode *list, int id, char *name);
-//
-//int deleteStudent(StudentListNode **list, int id);
-//
-//int printList(StudentListNode *list);
+int insertStudent(struct StudentListNodeStruct **list, int id, char *name);
+
+int findStudent(struct StudentListNodeStruct *list, int id, char *name);
+
+int deleteStudent(struct StudentListNodeStruct **list, int id);
+
+int printList(struct StudentListNodeStruct *list);
 
 #endif //CS201_A2_WARMUP_KYEUNG2_H
