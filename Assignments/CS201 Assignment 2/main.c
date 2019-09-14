@@ -55,105 +55,105 @@ main() {
     printList(theList);
 
     //---------------------------------------------------------------
-//
-//    number = 1;
-//    rc = findStudent(theList, number, name);
-//    if (rc == 0)
-//        printf("found student %d: %s\n", number, name);
-//    else
-//        printf("did not find student with id = %d\n", number);
-//
-//    number = 2;
-//    rc = findStudent(theList, number, name);
-//    if (rc == 0)
-//        printf("found student %d: %s\n", number, name);
-//    else
-//        printf("did not find student with id = %d\n", number);
-//
-//    number = 42;
-//    rc = findStudent(theList, number, name);
-//    if (rc == 0)
-//        printf("found student %d: %s\n", number, name);
-//    else
-//        printf("did not find student with id = %d\n", number);
-//
-//    number = 100;
-//    rc = findStudent(theList, number, name);
-//    if (rc == 0)
-//        printf("found student %d: %s\n", number, name);
-//    else
-//        printf("did not find student with id = %d\n", number);
-//
-//    number = 23;
-//    rc = findStudent(theList, number, name);
-//    if (rc == 0)
-//        printf("found student %d: %s\n", number, name);
-//    else
-//        printf("did not find student with id = %d\n", number);
 
-    ////---------------------------------------------------------------
+    number = 1;
+    rc = findStudent(theList, number, name);
+    if (rc == 0)
+        printf("found student %d: %s\n", number, name);
+    else
+        printf("did not find student with id = %d\n", number);
 
-//    number = 14;
-//    rc = deleteStudent(&theList, number);
-//    if (rc == 0)
-//        printf("deleted %d\n", number);
-//    else
-//        printf("failed to delete %d\n", number);
-//
-//    number = 1;
-//    rc = deleteStudent(&theList, number);
-//    if (rc == 0)
-//        printf("deleted %d\n", number);
-//    else
-//        printf("failed to delete %d\n", number);
-//
-//    number = 3;
-//    rc = findStudent(theList, number, name);
-//    if (rc == 0)
-//        printf("found student %d: %s\n", number, name);
-//    else
-//        printf("did not find student with id = %d\n", number);
-//
-//    number = 6;
-//    rc = deleteStudent(&theList, number);
-//    if (rc == 0)
-//        printf("deleted %d\n", number);
-//    else
-//        printf("failed to delete %d\n", number);
-//
-//    number = 3;
-//    rc = deleteStudent(&theList, number);
-//    if (rc == 0)
-//        printf("deleted %d\n", number);
-//    else
-//        printf("failed to delete %d\n", number);
-//
-//    number = 42;
-//    rc = deleteStudent(&theList, number);
-//    if (rc == 0)
-//        printf("deleted %d\n", number);
-//    else
-//        printf("failed to delete %d\n", number);
-//
-//    number = 1;
-//    rc = deleteStudent(&theList, number);
-//    if (rc == 0)
-//        printf("deleted %d\n", number);
-//    else
-//        printf("failed to delete %d\n", number);
-//
-//    number = 23;
-//    rc = deleteStudent(&theList, number);
-//    if (rc == 0)
-//        printf("deleted %d\n", number);
-//    else
-//        printf("failed to delete %d\n", number);
-//    printList(theList);
-//
-//    number = 1;
-//    rc = findStudent(theList, number, name);
-//    if (rc == 0)
-//        printf("found student %d: %s\n", number, name);
-//    else
-//        printf("did not find student with id = %d\n", number);
+    number = 2;
+    rc = findStudent(theList, number, name);
+    if (rc == 0)
+        printf("found student %d: %s\n", number, name);
+    else
+        printf("did not find student with id = %d\n", number);
+
+    number = 42;
+    rc = findStudent(theList, number, name);
+    if (rc == 0)
+        printf("found student %d: %s\n", number, name);
+    else
+        printf("did not find student with id = %d\n", number);
+
+    number = 100;
+    rc = findStudent(theList, number, name);
+    if (rc == 0)
+        printf("found student %d: %s\n", number, name);
+    else
+        printf("did not find student with id = %d\n", number);
+
+    number = 23;
+    rc = findStudent(theList, number, name);
+    if (rc == 0)
+        printf("found student %d: %s\n", number, name);
+    else
+        printf("did not find student with id = %d\n", number);
+
+    //---------------------------------------------------------------
+
+    number = 14;
+    rc = deleteStudent(&theList, number);
+    if (rc == 0)
+        printf("deleted %d\n", number);
+    else
+        printf("failed to delete %d\n", number);
+
+    number = 1;
+    rc = deleteStudent(&theList, number);
+    if (rc == 0)
+        printf("deleted %d\n", number);
+    else
+        printf("failed to delete %d\n", number);
+
+    number = 3;
+    rc = findStudent(theList, number, name);
+    if (rc == 0)
+        printf("found student %d: %s\n", number, name);
+    else
+        printf("did not find student with id = %d\n", number);
+
+    number = 6;
+    rc = deleteStudent(&theList, number);
+    if (rc == 0)
+        printf("deleted %d\n", number);
+    else
+        printf("failed to delete %d\n", number);
+
+    number = 3;
+    rc = deleteStudent(&theList, number);
+    if (rc == 0)
+        printf("deleted %d\n", number);
+    else
+        printf("failed to delete %d\n", number);
+
+    number = 42;
+    rc = deleteStudent(&theList, number);
+    if (rc == 0)
+        printf("deleted %d\n", number);
+    else
+        printf("failed to delete %d\n", number);
+
+    number = 1;
+    rc = deleteStudent(&theList, number);
+    if (rc == 0)
+        printf("deleted %d\n", number);
+    else
+        printf("failed to delete %d\n", number);
+
+    number = 23;
+    rc = deleteStudent(&theList, number);
+    if (rc == 0)
+        printf("deleted %d\n", number);
+    else
+        printf("failed to delete %d\n", number);
+    printList(theList);
+
+    number = 1;
+    rc = findStudent(theList, number, name);
+    if (rc == 0)
+        printf("found student %d: %s\n", number, name);
+    else
+        printf("did not find student with id = %d\n", number);
 }
