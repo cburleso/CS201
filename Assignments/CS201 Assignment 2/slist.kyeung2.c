@@ -12,39 +12,34 @@ typedef struct StudentListNodeStruct{
 } StudentListNode;
 
 int insertStudent(StudentListNode **list, int id, char *name) {
-    int found = findStudent(*list, id, &name); //sets find to use findstudent method
+    int found = findStudent(*list, id, name); //sets find to use findstudent method // TODO REMOVED & from name
 
     if (found == 0) { //gets return for duplicates
         return 1;
     }
 
+    StudentListNode *temp;
+
     StudentListNode *student; //creates node student
     student = (StudentListNode *) malloc(sizeof(StudentListNode)); //allocates new node memory
-
     student->id = id; //copies id to id field of new node
     strcpy(student->name, name); //copies name to name field of new node
 
+    if((*list) == NULL|| (*list)->id > student->id){
+        student->next = (*list);
+        (*list) = student;
+    }
+    else{
+        temp = (*list);
+        while(temp->next != NULL && temp->next->id < student->id){
+            temp = temp->next;
+        }
 
-//TODO pops all nodes then adds student, the student node will be the deepest one.
-//            StudentListNode *last = *list; //creaes direct copy of list
-//            student->next = NULL; //sets node to point to NULL
-//
-//            if(*list == NULL){ //If list is empty, copys student to list
-//                *list = student;
-//                return 0;
-//            }
-//
-//            while(last ->next != NULL){ //Otherwise, move to end of list
-//                last = last->next;
-//            }
-//
-//            last->next = student; //Add student node to end of list
-//            return 0;
+        student->next = temp->next;
+        temp->next = student;
+    }
 
-//TODO adds to top of stack, the student node will be the most current one.
-
-//            student->next = *list; //appends current list head to student's NULL
-//            (*list) = student; //sets list equal to student
+    return 0;
 }
 
 int findStudent(StudentListNode *list, int id, char *name) {
@@ -68,23 +63,24 @@ int findStudent(StudentListNode *list, int id, char *name) {
 }
 
 int deleteStudent(StudentListNode **list, int id){
-    StudentListNode* temp = *list, *prev; //creates temp nodes
-
-    while (temp != NULL && temp->id != id){ //loops while temp not empty
-        prev = temp;
-        temp = temp->next; //moves to next node
-    }
-
-    if(temp != NULL && temp->id == id){ //checks if temp not empty and id is a match
-        *list = temp->next;
+    StudentListNode* tempStudent = *list, *previousStudent;
+    while(tempStudent != NULL && tempStudent -> id == id){
+        *list = tempStudent->next;
+//        tempStudent = *list; //TODO may not need
         return 0;
     }
+    while(tempStudent != NULL){
+        while(tempStudent != NULL &&tempStudent->id != id){
+            previousStudent = tempStudent;
+            tempStudent = tempStudent->next;
+        }
+        if(tempStudent ==NULL){
+            return 1;
+        }
 
-    if(temp == NULL) { //if temp empty
-        return 1;
+        previousStudent->next = tempStudent->next;
+        return 0;
     }
-
-    prev->next = temp->next; //unlinks node from the list
 }
 
 int printList(StudentListNode *list){
@@ -99,7 +95,7 @@ int printList(StudentListNode *list){
     }
 
     else{ //if list is empty, prints...
-        printf("(empty list)\n");
+        printf("(list is empty)\n");
     }
     return 0;
 }

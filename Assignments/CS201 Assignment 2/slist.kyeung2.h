@@ -4,7 +4,6 @@
 
 //Struct StudentData is defined, typeDef removed to fix storage error on Linux
 typedef struct StudentListNodeStruct StudentListNode ;
-//typedef struct StudentListNode;
 
 
 int insertStudent(struct StudentListNodeStruct **list, int id, char *name);
