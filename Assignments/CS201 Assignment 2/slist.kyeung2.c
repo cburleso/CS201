@@ -21,8 +21,12 @@ int insertStudent(StudentListNode **list, int id, char *name) {
     StudentListNode *student; //creates node student
     student = (StudentListNode *) malloc(sizeof(StudentListNode)); //allocates new node memory
 
+    student->id = id; //copies id to id field of new node
+    strcpy(student->name, name); //copies name to name field of new node
+
+
 //TODO pops all nodes then adds student, the student node will be the deepest one.
-//
+//            StudentListNode *last = *list; //creaes direct copy of list
 //            student->next = NULL; //sets node to point to NULL
 //
 //            if(*list == NULL){ //If list is empty, copys student to list
@@ -38,8 +42,8 @@ int insertStudent(StudentListNode **list, int id, char *name) {
 //            return 0;
 
 //TODO adds to top of stack, the student node will be the most current one.
-//
-//            student->next = (*list) //appends current list head to student's NULL
+
+//            student->next = *list; //appends current list head to student's NULL
 //            (*list) = student; //sets list equal to student
 }
 
