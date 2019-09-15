@@ -12,25 +12,39 @@ typedef struct StudentListNodeStruct{
 } StudentListNode;
 
 int insertStudent(StudentListNode **list, int id, char *name) {
-    int found = findStudent(*list, id, &name);
+    int found = findStudent(*list, id, &name); //sets find to use findstudent method
 
-    if(found == 0){
+    if (found == 0) { //gets return for duplicates
         return 1;
     }
 
     StudentListNode *student; //creates node student
     student = (StudentListNode *) malloc(sizeof(StudentListNode)); //allocates new node memory
 
-    student->id = id; //copies id to id field of new node
-    strcpy(student->name, name); //copies name to name field of new node
+//TODO pops all nodes then adds student, the student node will be the deepest one.
+//
+//            student->next = NULL; //sets node to point to NULL
+//
+//            if(*list == NULL){ //If list is empty, copys student to list
+//                *list = student;
+//                return 0;
+//            }
+//
+//            while(last ->next != NULL){ //Otherwise, move to end of list
+//                last = last->next;
+//            }
+//
+//            last->next = student; //Add student node to end of list
+//            return 0;
 
-    student->next = *list; //links old list to end of new node
-    (*list) = student; //moves head to point to new node
-
-    return 0;
+//TODO adds to top of stack, the student node will be the most current one.
+//
+//            student->next = (*list) //appends current list head to student's NULL
+//            (*list) = student; //sets list equal to student
 }
 
 int findStudent(StudentListNode *list, int id, char *name) {
+
 
     if (list == NULL) {
         return 1;
@@ -71,12 +85,16 @@ int deleteStudent(StudentListNode **list, int id){
 
 int printList(StudentListNode *list){
     StudentListNode *currentNode = list; //creates current node
-    char butt[20];
-    while (currentNode != NULL){ //loops while current node is not empty
+    char butt[20];//TODO........................
+    if (list != NULL){ //if list is empty, prints...
+
+        while (currentNode != NULL){ //loops while current node is not empty
         printf("%d |%s| \n",currentNode->id, currentNode->name); //formatted print
         currentNode = currentNode->next; //sets current node to next in list
+        }
     }
-    if(list == NULL){ //if list is empty, prints...
+
+    else{ //if list is empty, prints...
         printf("(empty list)\n");
     }
     return 0;
