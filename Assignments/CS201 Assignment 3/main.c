@@ -1,37 +1,95 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 #include "pqueue.kyeung2.h"
+
+StudentRecord *createStudent(char *name, int id) {
+    StudentRecord *studentRec;
+    studentRec = (StudentRecord *) malloc(sizeof(StudentRecord));
+    studentRec->id = id;
+    strcpy(studentRec->name, name);
+    return studentRec;
+}
+
+void pqueueTests() {
+    int minPriority;
+    PQueueNode *pqueue = NULL;
+    StudentRecord *studentRec;
+
+    studentRec = createStudent("John", 67);
+    enqueue(&pqueue, 3, studentRec);
+
+    studentRec = createStudent("Brittany", 890);
+    enqueue(&pqueue, 8, studentRec);
+
+    studentRec = createStudent("Robert", 645);
+    enqueue(&pqueue, 1, studentRec);
+
+    studentRec = createStudent("Alice", 112);
+    enqueue(&pqueue, 9, studentRec);
+
+    studentRec = createStudent("Thomasina", 452);
+    enqueue(&pqueue, 2, studentRec);
+
+    studentRec = createStudent("Alfred", 516);
+    enqueue(&pqueue, 12, studentRec);
+
+    studentRec = createStudent("Margaret", 341);
+    enqueue(&pqueue, 9, studentRec);
+
+    studentRec = createStudent("Robert", 485);
+    enqueue(&pqueue, 2, studentRec);
+
+    studentRec = createStudent("Elizabeth", 734);
+    enqueue(&pqueue, 1, studentRec);
+
+//    printQueue(pqueue, printStudentRecord);
 //
-////TODO THIS MAIN IS TO BE USED TO TEST THE .C and .H, DO NOT CHANGE OR SUBMIT
+//    printf("--------------------------------------------------\n");
+//    studentRec = peek(pqueue);
+//    printf("peek: ");
+//    printStudentRecord(studentRec);
 //
-int main() {
-    /* Create a student named John, with id = 67. Enqueue this student with priority = 3.
-     * Create a student named Brittany, with id = 890. Enqueue this student with priority = 8.
-     * Create a student named Robert, with id = 645. Enqueue this student with priority = 1.
-     * Create a student named Alice, with id = 112. Enqueue this student with priority = 9.
-     * Create a student named Thomasina, with id = 452. Enqueue this student with priority = 2.
-     * Create a student named Alfred, with id = 516. Enqueue this student with priority = 12.
-     * Create a student named Margaret, with id = 341. Enqueue this student with prioirity = 9.
-     * Create a student named Robert, with id = 485. Enqueue this student with priority = 2.
-     * Create a student named Elizabeth, with id = 734. Enqueue this student with priority = 1 */
+//    studentRec = dequeue(&pqueue);
+//    printf("dequeued: ");
+//    printStudentRecord(studentRec);
+//
+//    studentRec = peek(pqueue);
+//    printf("peek: ");
+//    printStudentRecord(studentRec);
+//
+//    studentRec = dequeue(&pqueue);
+//    printf("dequeued: ");
+//    printStudentRecord(studentRec);
+//
+//    studentRec = peek(pqueue);
+//    printf("peek: ");
+//    printStudentRecord(studentRec);
+//
+//    printf("--------------------------------------------------\n");
+//
+//    studentRec = createStudent("David", 908);
+//    enqueue(&pqueue, 1, studentRec);
+//
+//    studentRec = createStudent("Katherine", 267);
+//    enqueue(&pqueue, 2, studentRec);
+//
+//    studentRec = createStudent("Andrew", 372);
+//    enqueue(&pqueue, 20, studentRec);
+//
+//    printQueue(pqueue, printStudentRecord);
+//
+//    printf("--------------------------------------------------\n");
+//
+//    while (queueLength(pqueue) > 0) {
+//        minPriority = getMinPriority(pqueue);
+//        printf("min priority = %d\n", minPriority);
+//        studentRec = dequeue(&pqueue);
+//        printf("dequeued: ");
+//        printStudentRecord(studentRec);
+//    }
+}
 
-
-    struct PQueueStruct *theQueue = NULL;
-    char name[32];
-    int number;
-
-    int priority;
-    int returnValue;
-
-    void *data;
-
-//    // Create a student named John, with id = 67. Enqueue this student with priority = 3.
-//    strcpy(name, "John");
-//    &data(&theQueue, 23, 67);
-//    returnValue =  enqueue(&theQueue, priority, data);
-//    if (returnValue == 0)
-//        printf("inserted %s\n", name);
-//    else
-//        printf("failed to insert %s\n", name);
-//    return 0;
+int main() { //no int for some reason in hibblers
+    pqueueTests();
 }
