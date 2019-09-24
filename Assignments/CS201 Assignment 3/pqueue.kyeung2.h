@@ -3,9 +3,14 @@
 #define CS201_A3_PQUEUE_KYEUNG2_H
 
 //Struct StudentData is defined, typeDef removed to fix storage error on Linux
-typedef struct PQueueStruct PQueueNode;
 
-//typedef struct StudentRecordStruct;
+typedef struct PQueueStruct {
+    int priority;
+    void *data;
+    struct PQueueStruct *next;
+} PQueueNode;
+
+//typedef struct StudentRecord;
 
 typedef struct{
     int id;

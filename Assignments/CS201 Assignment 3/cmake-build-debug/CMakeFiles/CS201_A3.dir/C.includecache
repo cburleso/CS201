@@ -6,6 +6,16 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/PC/Desktop/CS201 Assignment 3/main.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+pqueue.kyeung2.h
+C:/Users/PC/Desktop/CS201 Assignment 3/pqueue.kyeung2.h
+
 C:/Users/PC/Desktop/CS201 Assignment 3/pqueue.kyeung2.c
 stdio.h
 -

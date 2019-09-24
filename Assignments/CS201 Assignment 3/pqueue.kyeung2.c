@@ -4,17 +4,7 @@
 
 #include "pqueue.kyeung2.h"
 
-////StudentListNodeStruct header added to fix storage error message on linux
-//typedef struct{
-//    int id;
-//    char name[32];
-//} StudentRecordStruct;
-
-typedef struct PQueueStruct {
-    int priority;
-    void *data;
-    struct PQueueStruct *next;
-} PQueueNode;
+////MOVED STRUCTS TO .h
 
 int enqueue(PQueueNode **pqueue, int priority, void *data) {
     /* This will put the data in the priority queue in the correct place.
@@ -45,7 +35,7 @@ int enqueue(PQueueNode **pqueue, int priority, void *data) {
         temp = (*pqueue);
 
         //Loops while list copy has nodes and their id < given id
-        while(temp->next != NULL && temp->next->priority < mainQueue->priority){
+        while(temp->next != NULL && temp->next->priority <= mainQueue->priority){  //changed < to <= incase multiple with same priorities
 
             //Gets next in temp list
             temp = temp->next;
@@ -81,7 +71,7 @@ void *dequeue(PQueueNode **pqueue) {
         return NULL;
     }
 }
-
+//
 void *peek(PQueueNode *pqueue) {
     /* Return the data from the ﬁrst node in the pqueue (not the node itself).
      * If the pqueue is empty, then return NULL. The peek operation does not actually remove a node from the pqueue! */
@@ -100,93 +90,78 @@ void *peek(PQueueNode *pqueue) {
         return NULL;
     }
 }
-//
-//void printQueue(PQueueNode *pqueue, void (printFunction)(void*)) {
-//    // Print the data from each node in the queue.
-//
-//    //Creates temp node
-//    PQueueNode *currentNode = pqueue;
-//    printf(pqueue->priority); //TODO causes seg error
-//    printf(currentNode->data);
-//
-//    //Checks of list is empty
-//    if (pqueue != NULL){
-//
-//        //Loops while currentNode is not empty
-//        while (currentNode != NULL){
-//
-//            //Prints formatted result
-//            printf("Data in queue: ",currentNode->data); //TODO CAUSES ERRORS...
-//
-//            //Gets next node
-//            currentNode = currentNode->next;
-//        }
-//    } else
-//        printf("(queue is empty)\n");
-//}
-//
-//int getMinPriority(PQueueNode *pqueue) {
-//    // Return the priority of the ﬁrst node in the pqueue. If the pqueue is empty, return -1
-//
-//    //Creates temp value to hold priority
-//    int returnPriority;
-//
-//    //If *pqueue is not empty, sets it to start at the next node and unlinks first, otherwise NULL
-//    if (pqueue != NULL) {
-//
-//        //Sets returnData to priority of first node
-//         returnPriority = pqueue->priority;
-//        return returnPriority;
-//
-//    } else if (pqueue == NULL){
-//        return -1;
-//    }
-//}
-//
-//int queueLength(PQueueNode *pqueue) {
-//    //REturn number of nodes in pqueue
-//
-//    //Creates iteration node and temp counter
-//    PQueueNode *currentNode = pqueue;
-//    int length = 0 ;
-//
-//    //Checks of list is empty
-//    if (pqueue != NULL){
-//
-//        //Loops while currentNode is not empty
-//        while (currentNode != NULL){
-//            length += 1;
-//            //Gets next node
-//            currentNode = currentNode->next;
-//        }
-//    } else
-//        printf("(queue is empty)\n");
-//
-//    return length;
-//}
-//
-//void printStudentRecord(void *data) {
-//    /* Print an instance of StudentRecord as "%s %d", with the name ﬁeld and id ﬁeld.
-//     * Each priority-queue node will be a container for an instance of some other
-//     * data structure—this keeps the deﬁnition of the queue node independent of the speciﬁc data
-//     * that the queue node contains. The void* pointer can point to anything
-//     * it’s up to the user of the priority queue to cast the pointer to a pointer of the appropriate underlying data type. */
-//
-//    //Creates temp node
-//    StudentRecord *nodeInstance = data;
-//
-//    //Checks of node/list is empty
-//    if (nodeInstance != NULL){
-//
-//        //Loops while node/list is not empty
-////        while (nodeInstance != NULL){
-//
-//            //Prints formatted result
-//            printf("%d |%s| \n",nodeInstance->id, nodeInstance->name);
-//
-////        }
-//    }
-//
-//    else
-//        printf("(data is empty)\n");
-//}
+
+void printQueue(PQueueNode *pqueue, void (printFunction)(void*)) {
+    // Print the data from each node in the queue.
+
+    //Creates temp node
+    PQueueNode *currentNode = pqueue;
+
+    //Checks of list is empty
+    if (pqueue == NULL) {
+        printf("(queue is empty)\n");
+    } else if (pqueue != NULL) {
+        //Loops while currentNode is not empty
+
+        while (currentNode != NULL) {
+            printf("Priority: %d Data = ", currentNode->priority); //TODO CAUSES ERRORS...
+
+            printFunction(currentNode->data);
+
+            //Gets next node
+            currentNode = currentNode->next;
+        }
+    }
+}
+
+int getMinPriority(PQueueNode *pqueue) {
+    // Return the priority of the ﬁrst node in the pqueue. If the pqueue is empty, return -1
+
+    //Creates temp value to hold priority
+    int returnPriority;
+
+    //If *pqueue is not empty, sets it to start at the next node and unlinks first, otherwise NULL
+    if (pqueue != NULL) {
+
+        //Sets returnData to priority of first node
+         returnPriority = pqueue->priority;
+        return returnPriority;
+
+    } else if (pqueue == NULL){
+        return -1;
+    }
+}
+
+int queueLength(PQueueNode *pqueue) {
+    //REturn number of nodes in pqueue
+
+    //Creates iteration node and temp counter
+    PQueueNode *currentNode = pqueue;
+    int length = 0 ;
+
+    //Checks of list is empty
+    if (pqueue != NULL){
+
+        //Loops while currentNode is not empty
+        while (currentNode != NULL){
+            length += 1;
+            //Gets next node
+            currentNode = currentNode->next;
+        }
+    }
+    return length;
+}
+
+void printStudentRecord(void *data) {
+    /* Print an instance of StudentRecord as "%s %d", with the name ﬁeld and id ﬁeld.
+     * Each priority-queue node will be a container for an instance of some other
+     * data structure—this keeps the deﬁnition of the queue node independent of the speciﬁc data
+     * that the queue node contains. The void* pointer can point to anything
+     * it’s up to the user of the priority queue to cast the pointer to a pointer of the appropriate underlying data type. */
+
+    //Creates temp node
+    StudentRecord *nodeInstance = (StudentRecord*) data;
+
+    printf("%s %d \n",nodeInstance->name, nodeInstance->id);
+
+}

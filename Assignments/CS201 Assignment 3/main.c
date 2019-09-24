@@ -43,51 +43,52 @@ void pqueueTests() {
     studentRec = createStudent("Elizabeth", 734);
     enqueue(&pqueue, 1, studentRec);
 
-//    printQueue(pqueue, printStudentRecord);
-//
-//    printf("--------------------------------------------------\n");
-//    studentRec = peek(pqueue);
-//    printf("peek: ");
-//    printStudentRecord(studentRec);
-//
-//    studentRec = dequeue(&pqueue);
-//    printf("dequeued: ");
-//    printStudentRecord(studentRec);
-//
-//    studentRec = peek(pqueue);
-//    printf("peek: ");
-//    printStudentRecord(studentRec);
-//
-//    studentRec = dequeue(&pqueue);
-//    printf("dequeued: ");
-//    printStudentRecord(studentRec);
-//
-//    studentRec = peek(pqueue);
-//    printf("peek: ");
-//    printStudentRecord(studentRec);
-//
-//    printf("--------------------------------------------------\n");
-//
-//    studentRec = createStudent("David", 908);
-//    enqueue(&pqueue, 1, studentRec);
-//
-//    studentRec = createStudent("Katherine", 267);
-//    enqueue(&pqueue, 2, studentRec);
-//
-//    studentRec = createStudent("Andrew", 372);
-//    enqueue(&pqueue, 20, studentRec);
-//
-//    printQueue(pqueue, printStudentRecord);
-//
-//    printf("--------------------------------------------------\n");
-//
-//    while (queueLength(pqueue) > 0) {
-//        minPriority = getMinPriority(pqueue);
-//        printf("min priority = %d\n", minPriority);
-//        studentRec = dequeue(&pqueue);
-//        printf("dequeued: ");
-//        printStudentRecord(studentRec);
-//    }
+    printQueue(pqueue, printStudentRecord);
+
+    printf("--------------------------------------------------\n");
+    studentRec = peek(pqueue);
+    printf("peek: ");
+    printStudentRecord(studentRec);
+
+    studentRec = dequeue(&pqueue);
+    printf("dequeued: ");
+    printStudentRecord(studentRec);
+
+    studentRec = peek(pqueue);
+    printf("peek: ");
+    printStudentRecord(studentRec);
+
+    studentRec = dequeue(&pqueue);
+    printf("dequeued: ");
+    printStudentRecord(studentRec);
+
+    studentRec = peek(pqueue);
+    printf("peek: ");
+    printStudentRecord(studentRec);
+
+    printf("--------------------------------------------------\n");
+
+    studentRec = createStudent("David", 908);
+    enqueue(&pqueue, 1, studentRec);
+
+    studentRec = createStudent("Katherine", 267);
+    enqueue(&pqueue, 2, studentRec);
+
+    studentRec = createStudent("Andrew", 372);
+    enqueue(&pqueue, 20, studentRec);
+
+    printQueue(pqueue, printStudentRecord);
+
+    printf("--------------------------------------------------\n");
+
+    while (queueLength(pqueue) > 0) {
+        minPriority = getMinPriority(pqueue);
+        printf("min priority = %d\n", minPriority);
+        studentRec = dequeue(&pqueue);
+        printf("dequeued: ");
+        printStudentRecord(studentRec);
+    }
+
 }
 
 int main() { //no int for some reason in hibblers
