@@ -122,59 +122,59 @@ CS201_A4/fast:
 	$(MAKE) -f CMakeFiles\CS201_A4.dir\build.make CMakeFiles/CS201_A4.dir/build
 .PHONY : CS201_A4/fast
 
-main.obj: main.c.obj
+pqueue.jhibbele.obj: pqueue.jhibbele.c.obj
 
-.PHONY : main.obj
-
-# target to build an object file
-main.c.obj:
-	$(MAKE) -f CMakeFiles\CS201_A4.dir\build.make CMakeFiles/CS201_A4.dir/main.c.obj
-.PHONY : main.c.obj
-
-main.i: main.c.i
-
-.PHONY : main.i
-
-# target to preprocess a source file
-main.c.i:
-	$(MAKE) -f CMakeFiles\CS201_A4.dir\build.make CMakeFiles/CS201_A4.dir/main.c.i
-.PHONY : main.c.i
-
-main.s: main.c.s
-
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.c.s:
-	$(MAKE) -f CMakeFiles\CS201_A4.dir\build.make CMakeFiles/CS201_A4.dir/main.c.s
-.PHONY : main.c.s
-
-pqueue.kyeung2.obj: pqueue.kyeung2.c.obj
-
-.PHONY : pqueue.kyeung2.obj
+.PHONY : pqueue.jhibbele.obj
 
 # target to build an object file
-pqueue.kyeung2.c.obj:
-	$(MAKE) -f CMakeFiles\CS201_A4.dir\build.make CMakeFiles/CS201_A4.dir/pqueue.kyeung2.c.obj
-.PHONY : pqueue.kyeung2.c.obj
+pqueue.jhibbele.c.obj:
+	$(MAKE) -f CMakeFiles\CS201_A4.dir\build.make CMakeFiles/CS201_A4.dir/pqueue.jhibbele.c.obj
+.PHONY : pqueue.jhibbele.c.obj
 
-pqueue.kyeung2.i: pqueue.kyeung2.c.i
+pqueue.jhibbele.i: pqueue.jhibbele.c.i
 
-.PHONY : pqueue.kyeung2.i
+.PHONY : pqueue.jhibbele.i
 
 # target to preprocess a source file
-pqueue.kyeung2.c.i:
-	$(MAKE) -f CMakeFiles\CS201_A4.dir\build.make CMakeFiles/CS201_A4.dir/pqueue.kyeung2.c.i
-.PHONY : pqueue.kyeung2.c.i
+pqueue.jhibbele.c.i:
+	$(MAKE) -f CMakeFiles\CS201_A4.dir\build.make CMakeFiles/CS201_A4.dir/pqueue.jhibbele.c.i
+.PHONY : pqueue.jhibbele.c.i
 
-pqueue.kyeung2.s: pqueue.kyeung2.c.s
+pqueue.jhibbele.s: pqueue.jhibbele.c.s
 
-.PHONY : pqueue.kyeung2.s
+.PHONY : pqueue.jhibbele.s
 
 # target to generate assembly for a file
-pqueue.kyeung2.c.s:
-	$(MAKE) -f CMakeFiles\CS201_A4.dir\build.make CMakeFiles/CS201_A4.dir/pqueue.kyeung2.c.s
-.PHONY : pqueue.kyeung2.c.s
+pqueue.jhibbele.c.s:
+	$(MAKE) -f CMakeFiles\CS201_A4.dir\build.make CMakeFiles/CS201_A4.dir/pqueue.jhibbele.c.s
+.PHONY : pqueue.jhibbele.c.s
+
+scheduler.kyeung2.obj: scheduler.kyeung2.c.obj
+
+.PHONY : scheduler.kyeung2.obj
+
+# target to build an object file
+scheduler.kyeung2.c.obj:
+	$(MAKE) -f CMakeFiles\CS201_A4.dir\build.make CMakeFiles/CS201_A4.dir/scheduler.kyeung2.c.obj
+.PHONY : scheduler.kyeung2.c.obj
+
+scheduler.kyeung2.i: scheduler.kyeung2.c.i
+
+.PHONY : scheduler.kyeung2.i
+
+# target to preprocess a source file
+scheduler.kyeung2.c.i:
+	$(MAKE) -f CMakeFiles\CS201_A4.dir\build.make CMakeFiles/CS201_A4.dir/scheduler.kyeung2.c.i
+.PHONY : scheduler.kyeung2.c.i
+
+scheduler.kyeung2.s: scheduler.kyeung2.c.s
+
+.PHONY : scheduler.kyeung2.s
+
+# target to generate assembly for a file
+scheduler.kyeung2.c.s:
+	$(MAKE) -f CMakeFiles\CS201_A4.dir\build.make CMakeFiles/CS201_A4.dir/scheduler.kyeung2.c.s
+.PHONY : scheduler.kyeung2.c.s
 
 # Help Target
 help:
@@ -185,12 +185,12 @@ help:
 	@echo ... edit_cache
 	@echo ... CS201_A4
 	@echo ... rebuild_cache
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
-	@echo ... pqueue.kyeung2.obj
-	@echo ... pqueue.kyeung2.i
-	@echo ... pqueue.kyeung2.s
+	@echo ... pqueue.jhibbele.obj
+	@echo ... pqueue.jhibbele.i
+	@echo ... pqueue.jhibbele.s
+	@echo ... scheduler.kyeung2.obj
+	@echo ... scheduler.kyeung2.i
+	@echo ... scheduler.kyeung2.s
 .PHONY : help
 
 

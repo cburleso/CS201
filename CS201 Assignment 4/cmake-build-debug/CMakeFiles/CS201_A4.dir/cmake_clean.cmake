@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/CS201_A4.dir/main.c.obj"
-  "CMakeFiles/CS201_A4.dir/pqueue.kyeung2.c.obj"
+  "CMakeFiles/CS201_A4.dir/scheduler.kyeung2.c.obj"
+  "CMakeFiles/CS201_A4.dir/pqueue.jhibbele.c.obj"
   "CS201_A4.pdb"
   "CS201_A4.exe"
   "CS201_A4.exe.manifest"

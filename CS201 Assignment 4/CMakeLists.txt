@@ -5,6 +5,6 @@ set(CMAKE_CXX_STANDARD 14)
 
 include_directories(.)
 
-add_executable(CS201_A4 main.c pqueue.kyeung2.c pqueue.kyeung2.h)
+add_executable(CS201_A4 scheduler.kyeung2.c pqueue.jhibbele.c pqueue.jhibbele.h)
 
 

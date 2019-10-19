@@ -84,13 +84,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/PC/Desktop/CS201 Assignment 4/main.c">
+		<Unit filename="C:/Users/PC/Desktop/CS201 Assignment 4/pqueue.jhibbele.c">
 			<Option target="CS201_A4"/>
 		</Unit>
-		<Unit filename="C:/Users/PC/Desktop/CS201 Assignment 4/pqueue.kyeung2.c">
+		<Unit filename="C:/Users/PC/Desktop/CS201 Assignment 4/pqueue.jhibbele.h">
 			<Option target="CS201_A4"/>
 		</Unit>
-		<Unit filename="C:/Users/PC/Desktop/CS201 Assignment 4/pqueue.kyeung2.h">
+		<Unit filename="C:/Users/PC/Desktop/CS201 Assignment 4/scheduler.kyeung2.c">
 			<Option target="CS201_A4"/>
 		</Unit>
 		<Unit filename="C:/Users/PC/Desktop/CS201 Assignment 4/CMakeLists.txt">
