@@ -42,10 +42,10 @@ RM = "C:\Program Files\JetBrains\CLion 2018.3.3\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\PC\Desktop\CS201 Assignment 4"
+CMAKE_SOURCE_DIR = "C:\Users\PC\Desktop\CS201\CS201 Assignment 4"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\PC\Desktop\CS201 Assignment 4\cmake-build-debug"
+CMAKE_BINARY_DIR = "C:\Users\PC\Desktop\CS201\CS201 Assignment 4\cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/CS201_A4.dir/depend.make
@@ -59,30 +59,30 @@ include CMakeFiles/CS201_A4.dir/flags.make
 CMakeFiles/CS201_A4.dir/scheduler.kyeung2.c.obj: CMakeFiles/CS201_A4.dir/flags.make
 CMakeFiles/CS201_A4.dir/scheduler.kyeung2.c.obj: CMakeFiles/CS201_A4.dir/includes_C.rsp
 CMakeFiles/CS201_A4.dir/scheduler.kyeung2.c.obj: ../scheduler.kyeung2.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\PC\Desktop\CS201 Assignment 4\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/CS201_A4.dir/scheduler.kyeung2.c.obj"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\CS201_A4.dir\scheduler.kyeung2.c.obj   -c "C:\Users\PC\Desktop\CS201 Assignment 4\scheduler.kyeung2.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\PC\Desktop\CS201\CS201 Assignment 4\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/CS201_A4.dir/scheduler.kyeung2.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\CS201_A4.dir\scheduler.kyeung2.c.obj   -c "C:\Users\PC\Desktop\CS201\CS201 Assignment 4\scheduler.kyeung2.c"
 
 CMakeFiles/CS201_A4.dir/scheduler.kyeung2.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/CS201_A4.dir/scheduler.kyeung2.c.i"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\PC\Desktop\CS201 Assignment 4\scheduler.kyeung2.c" > CMakeFiles\CS201_A4.dir\scheduler.kyeung2.c.i
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\PC\Desktop\CS201\CS201 Assignment 4\scheduler.kyeung2.c" > CMakeFiles\CS201_A4.dir\scheduler.kyeung2.c.i
 
 CMakeFiles/CS201_A4.dir/scheduler.kyeung2.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/CS201_A4.dir/scheduler.kyeung2.c.s"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\PC\Desktop\CS201 Assignment 4\scheduler.kyeung2.c" -o CMakeFiles\CS201_A4.dir\scheduler.kyeung2.c.s
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\PC\Desktop\CS201\CS201 Assignment 4\scheduler.kyeung2.c" -o CMakeFiles\CS201_A4.dir\scheduler.kyeung2.c.s
 
 CMakeFiles/CS201_A4.dir/pqueue.jhibbele.c.obj: CMakeFiles/CS201_A4.dir/flags.make
 CMakeFiles/CS201_A4.dir/pqueue.jhibbele.c.obj: CMakeFiles/CS201_A4.dir/includes_C.rsp
 CMakeFiles/CS201_A4.dir/pqueue.jhibbele.c.obj: ../pqueue.jhibbele.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\PC\Desktop\CS201 Assignment 4\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/CS201_A4.dir/pqueue.jhibbele.c.obj"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\CS201_A4.dir\pqueue.jhibbele.c.obj   -c "C:\Users\PC\Desktop\CS201 Assignment 4\pqueue.jhibbele.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\PC\Desktop\CS201\CS201 Assignment 4\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/CS201_A4.dir/pqueue.jhibbele.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\CS201_A4.dir\pqueue.jhibbele.c.obj   -c "C:\Users\PC\Desktop\CS201\CS201 Assignment 4\pqueue.jhibbele.c"
 
 CMakeFiles/CS201_A4.dir/pqueue.jhibbele.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/CS201_A4.dir/pqueue.jhibbele.c.i"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\PC\Desktop\CS201 Assignment 4\pqueue.jhibbele.c" > CMakeFiles\CS201_A4.dir\pqueue.jhibbele.c.i
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\PC\Desktop\CS201\CS201 Assignment 4\pqueue.jhibbele.c" > CMakeFiles\CS201_A4.dir\pqueue.jhibbele.c.i
 
 CMakeFiles/CS201_A4.dir/pqueue.jhibbele.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/CS201_A4.dir/pqueue.jhibbele.c.s"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\PC\Desktop\CS201 Assignment 4\pqueue.jhibbele.c" -o CMakeFiles\CS201_A4.dir\pqueue.jhibbele.c.s
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\PC\Desktop\CS201\CS201 Assignment 4\pqueue.jhibbele.c" -o CMakeFiles\CS201_A4.dir\pqueue.jhibbele.c.s
 
 # Object files for target CS201_A4
 CS201_A4_OBJECTS = \
@@ -98,7 +98,7 @@ CS201_A4.exe: CMakeFiles/CS201_A4.dir/build.make
 CS201_A4.exe: CMakeFiles/CS201_A4.dir/linklibs.rsp
 CS201_A4.exe: CMakeFiles/CS201_A4.dir/objects1.rsp
 CS201_A4.exe: CMakeFiles/CS201_A4.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\PC\Desktop\CS201 Assignment 4\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable CS201_A4.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\PC\Desktop\CS201\CS201 Assignment 4\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable CS201_A4.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\CS201_A4.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -111,6 +111,6 @@ CMakeFiles/CS201_A4.dir/clean:
 .PHONY : CMakeFiles/CS201_A4.dir/clean
 
 CMakeFiles/CS201_A4.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\PC\Desktop\CS201 Assignment 4" "C:\Users\PC\Desktop\CS201 Assignment 4" "C:\Users\PC\Desktop\CS201 Assignment 4\cmake-build-debug" "C:\Users\PC\Desktop\CS201 Assignment 4\cmake-build-debug" "C:\Users\PC\Desktop\CS201 Assignment 4\cmake-build-debug\CMakeFiles\CS201_A4.dir\DependInfo.cmake" --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\PC\Desktop\CS201\CS201 Assignment 4" "C:\Users\PC\Desktop\CS201\CS201 Assignment 4" "C:\Users\PC\Desktop\CS201\CS201 Assignment 4\cmake-build-debug" "C:\Users\PC\Desktop\CS201\CS201 Assignment 4\cmake-build-debug" "C:\Users\PC\Desktop\CS201\CS201 Assignment 4\cmake-build-debug\CMakeFiles\CS201_A4.dir\DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/CS201_A4.dir/depend
 

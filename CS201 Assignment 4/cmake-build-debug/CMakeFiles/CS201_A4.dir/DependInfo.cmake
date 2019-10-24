@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "C:/Users/PC/Desktop/CS201 Assignment 4/pqueue.jhibbele.c" "C:/Users/PC/Desktop/CS201 Assignment 4/cmake-build-debug/CMakeFiles/CS201_A4.dir/pqueue.jhibbele.c.obj"
-  "C:/Users/PC/Desktop/CS201 Assignment 4/scheduler.kyeung2.c" "C:/Users/PC/Desktop/CS201 Assignment 4/cmake-build-debug/CMakeFiles/CS201_A4.dir/scheduler.kyeung2.c.obj"
+  "C:/Users/PC/Desktop/CS201/CS201 Assignment 4/pqueue.jhibbele.c" "C:/Users/PC/Desktop/CS201/CS201 Assignment 4/cmake-build-debug/CMakeFiles/CS201_A4.dir/pqueue.jhibbele.c.obj"
+  "C:/Users/PC/Desktop/CS201/CS201 Assignment 4/scheduler.kyeung2.c" "C:/Users/PC/Desktop/CS201/CS201 Assignment 4/cmake-build-debug/CMakeFiles/CS201_A4.dir/scheduler.kyeung2.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

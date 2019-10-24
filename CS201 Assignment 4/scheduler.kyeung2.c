@@ -31,6 +31,11 @@ typedef struct {
 // ******* INITIALIZATION OF VARIABLES/OBJS ******* //
 // Numeric value initialization for calculations
 int NUM_PROCESSES = 5;
+
+int SJF = 1;
+int FCFS = 2;
+int RR = 3;
+
 int currentTime, waitTime, totalWaitTime, i  = 0;
 
 // Boolean for busy state checking
@@ -266,7 +271,7 @@ int main(int argc, char *argv[]) {
     enqueueProcesses(&eventQueue, &processArray[0], NUM_PROCESSES);
 
     // Simulates FCFS (2) with jobs
-    runSimulation(2, 0, eventQueue);
+    runSimulation(FCFS, 0, eventQueue);
 
     // Calculate and displays mean wait time
     printf("\nmean wait time: %d\n", totalWaitTime/(NUM_PROCESSES*2));
@@ -278,7 +283,7 @@ int main(int argc, char *argv[]) {
     // FCFS test
     printf("\nSJF\n");
     enqueueProcesses(&eventQueue, &processArray[0], NUM_PROCESSES);
-    runSimulation(1, 0, eventQueue);
+    runSimulation(SJF, 0, eventQueue);
     printf("\nmean wait time: %d\n", totalWaitTime/(NUM_PROCESSES*2));
 
     return(0);
